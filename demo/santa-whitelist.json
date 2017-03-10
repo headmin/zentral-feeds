@@ -1,0 +1,38 @@
+{
+  "id": "io.zentral.demo.santa",
+  "name": "Whitelists for Santa LOCKDOWN mode",
+  "probes": {
+    "whitelist-for-santa-lockdown-mode": {
+      "body": {
+        "rules": [
+          {
+            "custom_msg": "SigningCert for Osquery / Teddy Reed",
+            "policy": "WHITELIST",
+            "rule_type": "CERTIFICATE",
+            "sha256": "259aba4c7924f2ae7b1770c00f0eafc0dc1b433c03ebb3ffa5c56ea9a7689d3b"
+          },
+          {
+            "custom_msg": "SigningCert for Jamf binary",
+            "policy": "WHITELIST",
+            "rule_type": "CERTIFICATE",
+            "sha256": "0caf42ad5cf856f4125a1e174692fce7d49a8f6acb70568f3bb53b69acdc979c"
+          },
+          {
+            "custom_msg": "SigningCert for Apple MacAppStore apps",
+            "policy": "WHITELIST",
+            "rule_type": "CERTIFICATE",
+            "sha256": "61977d6006459c4cefe9b988a453589946224957bfc07b262cd7ca1b7a61e04e"
+          },
+          {
+            "custom_msg": "SigningCert for NoMAD / Truesource Labs",
+            "policy": "WHITELIST",
+            "rule_type": "CERTIFICATE",
+            "sha256": "0b650773b22d06b6b33b8fe2173188d9635a97274cf7cdedb4acf05a31e4f619"
+          }
+        ]
+      },
+      "model": "SantaProbe",
+      "name": "Whitelist for Santa LOCKDOWN mode"
+    }
+  }
+}
